@@ -1,0 +1,238 @@
+/*CSS RESET PROPERTY*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;              /*It is used to go in that scetion of html*/
+}
+
+/*Navigation bar*/
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    height: 105%;
+    width: 100%;
+    z-index: -1;  /*It  will bring the contents to upwards of home,contact us,etc..*/
+    opacity: 0.5;
+    
+}
+
+
+/*Navigation bar* : Logo and image*/
+#foodlogo{
+    margin: 5px 8px;
+}
+
+#foodlogo img{
+    height: 55px;
+    margin: 5px 8px;
+}
+
+/*Navigation bar* : Listing Stylig*/
+
+
+
+
+#navbar ul{
+    display:flex;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 3px 15px;                   /*padding of home,contact us,etc...*/
+    border-radius: 15px;
+    text-decoration: none;          
+}
+
+#navbar ul li a:hover{
+    display: block;
+    color: rgb(27, 25, 25);
+    background-color: rgb(244, 252, 227);       
+}
+
+/*Home Section*/
+#home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3px 150px;   
+    height: 515px;            
+    align-items: center;
+    
+
+}
+
+#home::before{                    /*pseudo selectors specially for background*/
+    content: "";
+    background: url('../pic3.jpg')no-repeat center center/cover;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;                           /*IMP*/
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;  
+    opacity: 0.82;
+    
+
+}
+
+#home h1{
+    text-align: center;
+    font-size: 4.3rem;                                    /*welcome to food barista font*/
+    color: white;
+    font-family: 'Roboto Slab', serif;
+  
+}
+
+#home p{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'STIX Two Text', serif;
+    color: rgb(245, 248, 245);
+}
+
+
+#services{
+    margin: 5px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 20px 10px;
+    border-radius: 23px;
+    background-color: rgb(240, 247, 247);
+    margin-bottom: 20px;
+}
+
+#services .box img{
+    height: 100px;
+    padding: 3px 80px;
+    margin:auto;
+    display: block;                      /*IMP*/
+}                                            
+
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    height: 340px;
+    content: "";
+    background: url('../img3.jpg')no-repeat center center/cover;
+    background-color: transparent;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    z-index: -1;  
+    opacity: 0.5;                           /*IMP*/
+    
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 120px;
+}
+
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 9px;
+    font-size: 0.9rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: ui-sans-serif;
+}
+
+footer{
+    background: rgb(34, 32, 32);
+    color: white;
+    padding: 9px 20px;
+}
+
+/*Utility Class*/
+
+
+.h-primary{
+    font-size: 4.0rem;
+    font-family: system-ui;
+    padding: 25px;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    font-family: ui-sans-serif;
+    padding: 10px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(250, 244, 244);
+    background-color: rgb(230, 67, 67);
+    color: beige;
+    margin:15px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
