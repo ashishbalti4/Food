@@ -30,7 +30,7 @@
 </nav>
 
 <section id="home">
-    <h1 class = "h-primary">Welcome to Foodbarista</h1>
+    <h1 class = "h-primary">Welcome <span class="auto-input"></span></h1>
     <p>Healthy and Yummy Food Taste Better</p>
     
     <button class="btn">Order Now</button>
@@ -111,6 +111,17 @@
         </div>
 
     </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed=new Typed(".auto-input",{
+            strings: ["  to FoodBarista"],
+            typeSpeed:80,
+            backSpeed:80,
+            loop:true
+        })
+    </script>
+
     
        
 </body>
